@@ -33,26 +33,25 @@ for (let i = 0; i < images.length; i++) {
   img.innerHTML += `${element.title} ${element.text}`;
   let src = document.getElementById("img");
   src.appendChild(img);
-
-  // img = document.createElement("img");
-  // img.src = "img/02.webp";
-  // src = document.getElementById("img");
-  // src.appendChild(img);
-
-  // img = document.createElement("img");
-  // img.src = "img/03.webp";
-  // src = document.getElementById("img");
-  // src.appendChild(img);
-  // img = document.createElement("img");
-  // img.src = "img/04.webp";
-  // src = document.getElementById("img");
-  // src.appendChild(img);
-
-  // img = document.createElement("img");
-  // img.src = "img/05.webp";
-  // src = document.getElementById("img");
-  // src.appendChild(img);
 }
+// img = document.createElement("img");
+// img.src = "img/02.webp";
+// src = document.getElementById("img");
+// src.appendChild(img);
+
+// img = document.createElement("img");
+// img.src = "img/03.webp";
+// src = document.getElementById("img");
+// src.appendChild(img);
+// img = document.createElement("img");
+// img.src = "img/04.webp";
+// src = document.getElementById("img");
+// src.appendChild(img);
+
+// img = document.createElement("img");
+// img.src = "img/05.webp";
+// src = document.getElementById("img");
+// src.appendChild(img);
 
 // document.getElementById("btnNext").addEventListener("click", function () {
 //   let selected = 0;
