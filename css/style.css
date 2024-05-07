@@ -12,3 +12,7 @@ body {
 #img img{
     width: 15rem;
 }
+
+#title{
+    color: red;
+}

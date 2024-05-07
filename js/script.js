@@ -26,7 +26,35 @@ const images = [
   },
 ];
 
+for (let index = 0; index < images.length; index++) {
+  const element = images[index];
+  title.innerHTML += `${element.title} ${element.text}`;
+  //   img.src = "img/02.webp";
+  //   img.src = "img/03.webp";
+  //   img.src = "img/04.webp";
+  //   img.src = "img/05.webp";
+}
+
 let img = document.createElement("img");
 img.src = "img/01.webp";
 let src = document.getElementById("img");
+src.appendChild(img);
+
+img = document.createElement("img");
+img.src = "img/02.webp";
+src = document.getElementById("img");
+src.appendChild(img);
+
+img = document.createElement("img");
+img.src = "img/03.webp";
+src = document.getElementById("img");
+src.appendChild(img);
+img = document.createElement("img");
+img.src = "img/04.webp";
+src = document.getElementById("img");
+src.appendChild(img);
+
+img = document.createElement("img");
+img.src = "img/05.webp";
+src = document.getElementById("img");
 src.appendChild(img);

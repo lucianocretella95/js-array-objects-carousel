@@ -4,7 +4,7 @@ percorso immagine
 titolo
 descrizione
 
-MILESTONE #0
+MILESTONE #0 fatto
 Come nel primo carosello realizzato, focalizziamoci prima sulla creazione del markup statico: costruiamo il container e inseriamo l'immagine grande in modo da poter stilizzare lo slider.
 
 MILESTONE #1
