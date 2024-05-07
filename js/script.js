@@ -1,7 +1,7 @@
 const images = [
   {
     image: "img/01.webp",
-    title: "Marvel's Spiderman Miles Morale",
+    title: "Marvel's Spiderman Miles Morales",
     text: "Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.",
   },
   {
@@ -29,32 +29,42 @@ const images = [
 for (let index = 0; index < images.length; index++) {
   const element = images[index];
   title.innerHTML += `${element.title} ${element.text}`;
-  //   img.src = "img/02.webp";
-  //   img.src = "img/03.webp";
-  //   img.src = "img/04.webp";
-  //   img.src = "img/05.webp";
+  creoImg();
 }
 
-let img = document.createElement("img");
-img.src = "img/01.webp";
-let src = document.getElementById("img");
-src.appendChild(img);
+function creoImg() {
+  let img = document.createElement("img");
+  img.src = "img/01.webp";
+  let src = document.getElementById("img");
+  src.appendChild(img);
 
-img = document.createElement("img");
-img.src = "img/02.webp";
-src = document.getElementById("img");
-src.appendChild(img);
+  img = document.createElement("img");
+  img.src = "img/02.webp";
+  src = document.getElementById("img");
+  src.appendChild(img);
 
-img = document.createElement("img");
-img.src = "img/03.webp";
-src = document.getElementById("img");
-src.appendChild(img);
-img = document.createElement("img");
-img.src = "img/04.webp";
-src = document.getElementById("img");
-src.appendChild(img);
+  img = document.createElement("img");
+  img.src = "img/03.webp";
+  src = document.getElementById("img");
+  src.appendChild(img);
+  img = document.createElement("img");
+  img.src = "img/04.webp";
+  src = document.getElementById("img");
+  src.appendChild(img);
 
-img = document.createElement("img");
-img.src = "img/05.webp";
-src = document.getElementById("img");
-src.appendChild(img);
+  img = document.createElement("img");
+  img.src = "img/05.webp";
+  src = document.getElementById("img");
+  src.appendChild(img);
+}
+
+document.getElementById("btnNext").addEventListener("click", function () {
+  let selected = 0;
+  img[selected].classList.add("active");
+  if (selected < img - 1) {
+    selected++;
+  } else {
+    selected = 0;
+  }
+  img[selected].classList.remove("active");
+});

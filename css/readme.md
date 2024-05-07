@@ -7,7 +7,7 @@ descrizione
 MILESTONE #0 fatto
 Come nel primo carosello realizzato, focalizziamoci prima sulla creazione del markup statico: costruiamo il container e inseriamo l'immagine grande in modo da poter stilizzare lo slider.
 
-MILESTONE #1
+MILESTONE #1 fatto
 Ora rimuoviamo i contenuti statici dall'HTML.
 Costruiamo noi delle slide da aggiungere in pagina tramite un ciclo sul nostro array.
 

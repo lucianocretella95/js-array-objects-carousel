@@ -9,10 +9,15 @@ body {
   color: white;
 }
 
-#img img{
-    width: 15rem;
+#img img {
+  width: 15rem;
 }
 
-#title{
-    color: red;
+#title {
+  color: red;
+}
+
+#btnNext,
+#btnPrev {
+  margin-top: 1rem;
 }
