@@ -26,45 +26,41 @@ const images = [
   },
 ];
 
-for (let index = 0; index < images.length; index++) {
-  const element = images[index];
-  title.innerHTML += `${element.title} ${element.text}`;
-  creoImg();
-}
-
-function creoImg() {
+for (let i = 0; i < images.length; i++) {
+  const element = images[i];
   let img = document.createElement("img");
-  img.src = "img/01.webp";
+  img.src = `${element.image}`;
+  img.innerHTML += `${element.title} ${element.text}`;
   let src = document.getElementById("img");
   src.appendChild(img);
 
-  img = document.createElement("img");
-  img.src = "img/02.webp";
-  src = document.getElementById("img");
-  src.appendChild(img);
+  // img = document.createElement("img");
+  // img.src = "img/02.webp";
+  // src = document.getElementById("img");
+  // src.appendChild(img);
 
-  img = document.createElement("img");
-  img.src = "img/03.webp";
-  src = document.getElementById("img");
-  src.appendChild(img);
-  img = document.createElement("img");
-  img.src = "img/04.webp";
-  src = document.getElementById("img");
-  src.appendChild(img);
+  // img = document.createElement("img");
+  // img.src = "img/03.webp";
+  // src = document.getElementById("img");
+  // src.appendChild(img);
+  // img = document.createElement("img");
+  // img.src = "img/04.webp";
+  // src = document.getElementById("img");
+  // src.appendChild(img);
 
-  img = document.createElement("img");
-  img.src = "img/05.webp";
-  src = document.getElementById("img");
-  src.appendChild(img);
+  // img = document.createElement("img");
+  // img.src = "img/05.webp";
+  // src = document.getElementById("img");
+  // src.appendChild(img);
 }
 
-document.getElementById("btnNext").addEventListener("click", function () {
-  let selected = 0;
-  img[selected].classList.add("active");
-  if (selected < img - 1) {
-    selected++;
-  } else {
-    selected = 0;
-  }
-  img[selected].classList.remove("active");
-});
+// document.getElementById("btnNext").addEventListener("click", function () {
+//   let selected = 0;
+//   img[selected].classList.add("active");
+//   if (selected < img - 1) {
+//     selected++;
+//   } else {
+//     selected = 0;
+//   }
+//   img[selected].classList.remove("active");
+// });
