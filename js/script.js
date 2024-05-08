@@ -30,36 +30,18 @@ for (let i = 0; i < images.length; i++) {
   const element = images[i];
   let img = document.createElement("img");
   img.src = `${element.image}`;
-  img.innerHTML += `${element.title} ${element.text}`;
-  let src = document.getElementById("img");
-  src.appendChild(img);
+  title.innerHTML += `${element.title} ${element.text}`;
+  title = document.getElementById("img");
+  title.appendChild(img);
 }
-// img = document.createElement("img");
-// img.src = "img/02.webp";
-// src = document.getElementById("img");
-// src.appendChild(img);
 
-// img = document.createElement("img");
-// img.src = "img/03.webp";
-// src = document.getElementById("img");
-// src.appendChild(img);
-// img = document.createElement("img");
-// img.src = "img/04.webp";
-// src = document.getElementById("img");
-// src.appendChild(img);
-
-// img = document.createElement("img");
-// img.src = "img/05.webp";
-// src = document.getElementById("img");
-// src.appendChild(img);
+// let selected = 0;
+// let vero = false;
+// let element = images[images.image];
 
 // document.getElementById("btnNext").addEventListener("click", function () {
-//   let selected = 0;
-//   img[selected].classList.add("active");
-//   if (selected < img - 1) {
-//     selected++;
-//   } else {
-//     selected = 0;
+//   if (element == images.length - 1) {
+//     element++;
+//     console.log("start");
 //   }
-//   img[selected].classList.remove("active");
 // });

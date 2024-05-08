@@ -9,12 +9,18 @@ body {
   color: white;
 }
 
+#img {
+  display: flex;
+  flex-direction: column-reverse;
+  object-fit: cover;
+}
+
 #img img {
-  width: 15rem;
+  width: 10rem;
 }
 
 #title {
-  color: red;
+  color: white;
 }
 
 #btnNext,
